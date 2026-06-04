@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block base %}
+
+<div class="container-fluid d-flex justify-content-center align-items-center" style="min-height:80vh;">
+    
+    <div class="w-50 border shadow bg-light">
+        <h1 class="text-center my-2">EDIT STUDENT</h1>
+
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+
+            {% if form.instance.photo %}
+                <div class="text-center mb-2">
+                    <img src="{{ form.instance.photo.url }}" width="120px">
+                </div>
+            {% endif %}
+
+            <table class="table">
+                {{ form.as_table }}
+            </table>
+
+            <div class="text-center">
+                <button class="btn btn-success">UPDATE</button>
+            </div>
+        </form>
+    </div>
+
+</div>
+
+{% endblock %}
