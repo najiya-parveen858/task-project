@@ -54,5 +54,99 @@
     </div>
 
 </div>
+<style>
+
+/* IMAGE RESPONSIVE */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* TABLET VIEW */
+@media (max-width: 992px) {
+
+    .col-lg-6 {
+        width: 80% !important;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
+
+/* MOBILE VIEW */
+@media (max-width: 768px) {
+
+    /* Card width full */
+    .col-12 {
+        padding: 0 10px;
+    }
+
+    /* Convert table to block layout */
+    table,
+    table tbody,
+    table tr,
+    table td {
+        display: block;
+        width: 100%;
+    }
+
+    table tr {
+        margin-bottom: 15px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    table td {
+        padding: 6px 0;
+        text-align: left;
+    }
+
+    /* Label styling */
+    table td:first-child {
+        font-weight: 600;
+        color: #555;
+        margin-bottom: 4px;
+    }
+
+    /* Inputs full width */
+    input, select, textarea {
+        width: 100% !important;
+    }
+
+    /* Button full width */
+    button {
+        width: 100%;
+    }
+
+    /* Image smaller */
+    img {
+        width: 90px !important;
+        height: 90px !important;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+}
+
+/* EXTRA SMALL DEVICES */
+@media (max-width: 480px) {
+
+    table td {
+        font-size: 13px;
+    }
+
+    img {
+        width: 80px !important;
+        height: 80px !important;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+}
+
+</style>
 
 {% endblock %}

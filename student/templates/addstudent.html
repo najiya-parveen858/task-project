@@ -42,4 +42,83 @@
 
     </div>
 </div>
+<style>
+
+/* Make card adapt better */
+@media (max-width: 992px) {
+    .col-lg-6 {
+        width: 80% !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .col-md-8 {
+        width: 95% !important;
+    }
+}
+
+/* TABLE RESPONSIVENESS */
+@media (max-width: 768px) {
+
+    table,
+    table tbody,
+    table tr,
+    table td {
+        display: block;
+        width: 100%;
+    }
+
+    table tr {
+        margin-bottom: 15px;
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+        background: #fff;
+        border-radius: 8px;
+    }
+
+    table td {
+        text-align: left;
+        padding: 6px 0;
+    }
+
+    /* Label (first column) */
+    table td:first-child {
+        font-weight: 600;
+        color: #444;
+        margin-bottom: 4px;
+    }
+
+    /* Inputs full width */
+    input, select, textarea {
+        width: 100% !important;
+    }
+
+    /* Button full width */
+    button {
+        width: 100%;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+}
+
+/* EXTRA SMALL DEVICES */
+@media (max-width: 480px) {
+
+    table td {
+        font-size: 13px;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+}
+
+/* GENERAL IMPROVEMENT */
+.table td {
+    vertical-align: middle;
+}
+
+</style>
 {% endblock base %}
